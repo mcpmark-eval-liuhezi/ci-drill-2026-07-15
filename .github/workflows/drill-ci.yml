@@ -1,0 +1,15 @@
+name: Drill CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliberate failure
+        run: |
+          echo "This step exits 1 on purpose to demonstrate a red CI run"
+          exit 1

@@ -1,0 +1,13 @@
+name: Drill Soak
+
+on:
+  workflow_dispatch:
+
+jobs:
+  soak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep
+        run: |
+          echo "Drill Soak is running - sleeping for about 20 minutes..."
+          sleep 1200
